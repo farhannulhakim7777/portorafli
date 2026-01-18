@@ -1,0 +1,87 @@
+/* --- Default / Desktop Styles --- */
+.hero-section {
+  padding: 60px 0;
+}
+
+.hero-img {
+  max-width: 390px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto; /* Supaya tetap center di dalam kolomnya */
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.hero-tagline {
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+}
+
+/* --- Responsive Layout --- */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-img {
+    max-width: 300px;
+  }
+}
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-section .row {
+    flex-direction: column-reverse !important;
+    display: flex;
+  }
+
+  .hero-img {
+    /* UKURAN FOTO DIKECILKAN DI SINI */
+    width: 170px !important;
+    height: 170px !important;
+
+    object-fit: cover; /* Penting: agar foto tidak gepeng/tarik */
+    border-radius: 70% !important; /* Membuat bulat sempurna */
+    margin-bottom: 20px;
+
+    /* Efek Glow Biru */
+    border: 4px solid #00a2ff;
+    box-shadow: 0 0 15px rgba(0, 162, 255, 0.5);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    font-size: 1.6rem; /* Sedikit dikecilkan agar proporsional */
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero-tagline {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+}

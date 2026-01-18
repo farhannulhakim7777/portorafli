@@ -1,0 +1,127 @@
+:root {
+  --bg-dark: #0f0f11;
+  --bg-light: #ffffff;
+  --text-dark: #0f0f11;
+  --text-light: #ffffff;
+  --accent: #e5e5e5;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Dark sections */
+.section-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Light sections */
+.section-light {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #0f0f11;
+  border: none;
+}
+
+.btn-outline-dark {
+  border-color: #0f0f11;
+  color: #0f0f11;
+}
+
+.btn-outline-dark:hover {
+  background-color: #0f0f11;
+  color: #ffffff;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.hero-section h1 {
+  letter-spacing: -1px;
+}
+
+.hero-section img {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.about-section h2 {
+  letter-spacing: -0.5px;
+}
+
+.portfolio-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #2a2a2e;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.timeline-content h5 {
+  color: #ffffff;
+}
+
+.contact-card {
+  background-color: #ffffff;
+}
